@@ -9,6 +9,9 @@ version = '1.0.0'
 java {
     withSourcesJar()
     withJavadocJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 repositories {
